@@ -19,12 +19,10 @@ public class CharacterScript : MonoBehaviour
     {
         if (selected)
         {
-            Debug.Log("reveal");
             spriteRenderer.maskInteraction = SpriteMaskInteraction.None; 
         }
         if (!selected)
         {
-            Debug.Log("hide");
             spriteRenderer.maskInteraction = SpriteMaskInteraction.VisibleOutsideMask;
         }
     }
